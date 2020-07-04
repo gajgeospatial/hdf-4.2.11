@@ -1,2 +1,4 @@
 Gdal requires that all include files be copied to an include directory
 Copy the files from hdf/src mfhdf/libsrc and msvc to Include
+
+Set envionment to HDF4_DIR with project tool
