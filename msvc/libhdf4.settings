@@ -1,0 +1,38 @@
+      SUMMARY OF THE HDF4 CONFIGURATION
+      =================================
+
+General Information:
+-------------------
+                   HDF4 Version: 4.2.11
+                  Configured on: 
+                  Configured by: Visual Studio 12
+                 Configure mode: CMAKE 2.8.12.2
+                    Host system: Windows-6.2
+              Uname information: Windows
+                      Libraries: 
+             Installation point: C:/Program Files (x86)/HDF4
+
+Compiling Options:
+------------------
+               Compilation Mode: 
+                     C Compiler: C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/bin/cl.exe
+                         CFLAGS:  /DWIN32 /D_WINDOWS /W3
+                       CPPFLAGS:  /DWIN32 /D_WINDOWS /W3 /GR /EHsc
+               Shared Libraries: YES
+               Static Libraries: NO
+  Statically Linked Executables: 
+                        LDFLAGS:  /machine:X86 
+                Extra libraries: D:/Development/op3d_active/jpeg-9/vc110/Win32/Release/jpeg.lib;D:/Development/op3d_active/zlib-1.2.8/vc110/Win32/Release/zlib.lib
+                       Archiver: 
+                         Ranlib: 
+
+Languages:
+----------
+                        Fortran: OFF
+               Fortran Compiler: 
+                  Fortran Flags:  /W1 /nologo /fpp /libs:dll /threads
+
+Features:
+---------
+               SZIP compression: disabled
+   Support for netCDF API 2.3.2: ON

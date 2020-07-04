@@ -1,0 +1,60 @@
+HDF version 4.2.11
+------------------------------------------------------------------------------
+
+This directory contains the binary (release) distribution of 
+HDF-4.2.11 that was compiled on; 
+    Windows 8 X86, using VISUAL STUDIO 2013. 
+ 
+It was built with the following options: 
+	-- SHARED C/Fortran libraries
+	-- SZIP (encoder enabled), ZLIB, and JPEG
+	-- SHARED HDF4 tools
+
+The contents of this directory are:
+
+    COPYING                 - Copyright notice
+    README.txt              - This file
+    HDF-4.2.11-win32.exe    - HDF4 Install Utility
+
+We provide the JPEG, ZLIB, SZIP libraries within the installation package for convenience.  
+  
+Installation
+===========================================================================
+1. Execute HDF-4.2.11-win32.exe
+2. Follow prompts
+===========================================================================
+
+After Installation
+===========================================================================
+The compressed examples file HDF4Examples-0.1.1-Source.zip, located in the 
+HDF4 install folder, can be built and tested with CMake and the supplied
+HDF4_Examples.cmake file. The HDF4_Examples.cmake expects HDF4 to have
+been installed in the default location with above compilers. Also, CMake 
+and unzip utilities should be installed.
+
+To test the installation with the examples;
+    Create a directory to run the examples.
+    Copy HDF4Examples-0.1.1-Source.zip to this directory, do NOT unzip.
+    Copy HDF4_Examples.cmake to this directory.
+    Edit HDF4_Examples.cmake line 8 to set INSTALLDIR to where HDF4 is installed.
+    NOTE for Windows: comment line 16 with a '#' character if you do not have a command line 
+              unzip program. Use Windows Explorer to unzip the HDF4Examples-0.1.1-Source.zip file.
+              Edit line 9 for CMake 2.x by removing the 4 digit VS version from the Generator value.
+    Execute from this directory: 
+        ctest -S HDF4_Examples.cmake,HDF4Examples-0.1.1-Source -C Release -O test.log -VV
+
+When executed, the ctest script will save the results to the log file, test.log, as
+indicated by the ctest command. If you wish the to see more build and test information, 
+add "-VV" to the ctest command. The output should show near the end;
+      100% tests passed, 0 tests failed out of 49.
+
+For more information see USING_CMake_Examples.txt in the install folder. 
+===========================================================================
+
+Documentation for this release can be found at the following URL:
+    http://www.hdfgroup.org/doc.html
+
+See the HDF4 home page for further details:
+    http://hdfgroup.org/products/hdf4/
+
+Bugs should be reported to help@hdfgroup.org.

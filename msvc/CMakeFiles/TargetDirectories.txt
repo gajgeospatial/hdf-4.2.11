@@ -1,0 +1,5 @@
+D:/Development/op3d_active/hdf-4.2.11/msvc/xdr/CMakeFiles/ALL_BUILD.dir
+D:/Development/op3d_active/hdf-4.2.11/msvc/CMakeFiles/ZERO_CHECK.dir
+D:/Development/op3d_active/hdf-4.2.11/msvc/hdf/src/CMakeFiles/hdf.dir
+D:/Development/op3d_active/hdf-4.2.11/msvc/mfhdf/libsrc/CMakeFiles/mfhdf.dir
+D:/Development/op3d_active/hdf-4.2.11/msvc/xdr/CMakeFiles/xdr.dir
